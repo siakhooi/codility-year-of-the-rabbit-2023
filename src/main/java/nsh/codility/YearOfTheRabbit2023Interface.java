@@ -1,5 +1,5 @@
 package nsh.codility;
 
-public interface Challenge2021Interface {
+public interface YearOfTheRabbit2023Interface {
 	public int solution(int[] A, int L, int R);
 }

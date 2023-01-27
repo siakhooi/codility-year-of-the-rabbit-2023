@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nsh.codility</groupId>
-	<artifactId>ChallengeName</artifactId>
+	<artifactId>codility-year-of-the-rabbit-2023</artifactId>
 	<version>1.0.0</version>
 
-	<name>ChallengeName</name>
-	<url>https://github.com/siakhooi/codility-ChallengeName/</url>
+	<name>Year Of The Rabbit 2023</name>
+	<url>https://github.com/siakhooi/codility-year-of-the-rabbit-2023/</url>
 
 	<build>
 		<plugins>
