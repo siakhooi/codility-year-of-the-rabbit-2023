@@ -2,28 +2,25 @@ package nsh.codility;
 
 public class YearOfTheRabbit2023A implements YearOfTheRabbit2023Interface {
 
-	public int solution(int[] A, int L, int R) {
+	public int solution(int[] A, int[] B) {
+		int R = -1;
 		int N = A.length;
 
-		return N;
-	}
+		for (int i = 0; i < N; i++) {
+			boolean hasDislike = false;
+			for (int j = 0; j < N; j++) {
+				int n = (j - i + N) % N;
 
-	// -----------------------------------------
-	static void pf(String f, Object... v) {
-		System.out.printf(f, v);
-	}
-
-	public static void main1(String argv[]) {
-		int[] A = new int[] {2, 3, 3, 4};
-		int L = 3;
-		int R = 1;
-		int E = 3;
-
-		int R1 = (new YearOfTheRabbit2023A()).solution(A, L, R);
-		pf("     K: %d", L);
-		pf("    in: %s", R);
-		pf("   out: %s", R1);
-		pf("expect: %s", E);
-		pf("Result: %s", (R1 == E) ? "good" : "bad");
+				if (A[j] == B[n]) {
+					hasDislike = true;
+					break;
+				}
+			}
+			if (!hasDislike) {
+				R = i;
+				break;
+			}
+		}
+		return R;
 	}
 }
